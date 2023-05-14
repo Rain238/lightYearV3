@@ -1,0 +1,82 @@
+<template>
+<div class="container-fluid">
+<div class="row">
+ <div class="col-lg-12">
+  <div class="card">
+   <header class="card-header">
+    <div class="card-title">
+     下拉选择
+    </div>
+   </header>
+   <div class="card-body">
+    <p>使用改变元素初始外观的自定义 CSS 自定义原生 <code>&lt;select&gt;</code>。</p>
+    <h6>默认</h6>
+    <p>自定义 <code>&lt;select&gt;</code> 菜单只需要一个自定义类 .form-select 来触发自定义样式。 自定义样式仅限于 <code>&lt;select&gt;</code> 的初始外观，并且由于浏览器限制不能修改 <code>&lt;option&gt;</code>。</p>
+    <div class="border-example"><select class="form-select" aria-label="默认下拉选择示例"> <option selected>打开这个选择菜单</option> <option value="1">第一回 北汉主屏逐忠臣　呼延赞激烈报仇</option> <option value="2">第二回 李建忠力救义士　呼延赞梦神教武</option> <option value="3">第三回 金头娘征场斗艺　高怀德大战潞州</option> </select>
+    </div>
+    <pre>&lt;select class="form-select" aria-label="默认下拉选择示例"&gt;
+  &lt;option selected&gt;打开这个选择菜单&lt;/option&gt;
+  &lt;option value="1"&gt;第一回 北汉主屏逐忠臣　呼延赞激烈报仇&lt;/option&gt;
+  &lt;option value="2"&gt;第二回 李建忠力救义士　呼延赞梦神教武&lt;/option&gt;
+  &lt;option value="3"&gt;第三回 金头娘征场斗艺　高怀德大战潞州&lt;/option&gt;
+&lt;/select&gt;</pre>
+    <h6>尺寸</h6>
+    <p>您还可以从小型和大型自定义选择中进行选择，以匹配我们类似大小的文本输入。</p>
+    <div class="border-example"><select class="form-select form-select-lg mb-3" aria-label=".form-select-lg 示例"> <option selected>打开这个选择菜单</option> <option value="1">第一回 北汉主屏逐忠臣　呼延赞激烈报仇</option> <option value="2">第二回 李建忠力救义士　呼延赞梦神教武</option> <option value="3">第三回 金头娘征场斗艺　高怀德大战潞州</option> </select> <select class="form-select form-select-sm" aria-label=".form-select-sm 示例"> <option selected>打开这个选择菜单</option> <option value="1">第一回 北汉主屏逐忠臣　呼延赞激烈报仇</option> <option value="2">第二回 李建忠力救义士　呼延赞梦神教武</option> <option value="3">第三回 金头娘征场斗艺　高怀德大战潞州</option> </select>
+    </div>
+    <pre>&lt;select class="form-select form-select-lg mb-3" aria-label=".form-select-lg 示例"&gt;
+  &lt;option selected&gt;打开这个选择菜单&lt;/option&gt;
+  &lt;option value="1"&gt;第一回 北汉主屏逐忠臣　呼延赞激烈报仇&lt;/option&gt;
+  &lt;option value="2"&gt;第二回 李建忠力救义士　呼延赞梦神教武&lt;/option&gt;
+  &lt;option value="3"&gt;第三回 金头娘征场斗艺　高怀德大战潞州&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class="form-select form-select-sm" aria-label=".form-select-sm 示例"&gt;
+  &lt;option selected&gt;打开这个选择菜单&lt;/option&gt;
+  &lt;option value="1"&gt;第一回 北汉主屏逐忠臣　呼延赞激烈报仇&lt;/option&gt;
+  &lt;option value="2"&gt;第二回 李建忠力救义士　呼延赞梦神教武&lt;/option&gt;
+  &lt;option value="3"&gt;第三回 金头娘征场斗艺　高怀德大战潞州&lt;/option&gt;
+&lt;/select&gt;</pre>
+    <p>还支持 <code>multiple</code> 属性：</p>
+    <div class="border-example"><select class="form-select" multiple aria-label="multiple下拉选择示例"> <option selected>打开这个选择菜单</option> <option value="1">第一回 北汉主屏逐忠臣　呼延赞激烈报仇</option> <option value="2">第二回 李建忠力救义士　呼延赞梦神教武</option> <option value="3">第三回 金头娘征场斗艺　高怀德大战潞州</option> </select>
+    </div>
+    <pre>&lt;select class="form-select" multiple aria-label="multiple下拉选择示例"&gt;
+  &lt;option selected&gt;打开这个选择菜单&lt;/option&gt;
+  &lt;option value="1"&gt;第一回 北汉主屏逐忠臣　呼延赞激烈报仇&lt;/option&gt;
+  &lt;option value="2"&gt;第二回 李建忠力救义士　呼延赞梦神教武&lt;/option&gt;
+  &lt;option value="3"&gt;第三回 金头娘征场斗艺　高怀德大战潞州&lt;/option&gt;
+&lt;/select&gt;</pre>
+    <p>与 <code>size</code> 属性一样：</p>
+    <div class="border-example"><select class="form-select" size="3" aria-label="3个下拉选择项可见示例"> <option selected>打开这个选择菜单</option> <option value="1">第一回 北汉主屏逐忠臣　呼延赞激烈报仇</option> <option value="2">第二回 李建忠力救义士　呼延赞梦神教武</option> <option value="3">第三回 金头娘征场斗艺　高怀德大战潞州</option> </select>
+    </div>
+    <pre>&lt;select class="form-select" size="3" aria-label="3个下拉选择项可见示例"&gt;
+  &lt;option selected&gt;打开这个选择菜单&lt;/option&gt;
+  &lt;option value="1"&gt;第一回 北汉主屏逐忠臣　呼延赞激烈报仇&lt;/option&gt;
+  &lt;option value="2"&gt;第二回 李建忠力救义士　呼延赞梦神教武&lt;/option&gt;
+  &lt;option value="3"&gt;第三回 金头娘征场斗艺　高怀德大战潞州&lt;/option&gt;
+&lt;/select&gt;</pre>
+    <h6>禁用</h6>
+    <p>在 select 上添加 disabled 布尔属性，使其外观变灰并删除指针事件。</p>
+    <div class="border-example"><select class="form-select" aria-label="禁用下拉选择示例" disabled> <option selected>打开这个选择菜单</option> <option value="1">第一回 北汉主屏逐忠臣　呼延赞激烈报仇</option> <option value="2">第二回 李建忠力救义士　呼延赞梦神教武</option> <option value="3">第三回 金头娘征场斗艺　高怀德大战潞州</option> </select>
+    </div>
+    <pre>&lt;select class="form-select" aria-label="禁用下拉选择示例" disabled&gt;
+  &lt;option selected&gt;打开这个选择菜单&lt;/option&gt;
+  &lt;option value="1"&gt;第一回 北汉主屏逐忠臣　呼延赞激烈报仇&lt;/option&gt;
+  &lt;option value="2"&gt;第二回 李建忠力救义士　呼延赞梦神教武&lt;/option&gt;
+  &lt;option value="3"&gt;第三回 金头娘征场斗艺　高怀德大战潞州&lt;/option&gt;
+&lt;/select&gt;</pre>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+</template>
+<script>
+export default {
+name: "Lyear-Forms-Select"
+}
+</script>
+
+<style scoped>
+
+</style>
